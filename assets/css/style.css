@@ -723,7 +723,15 @@ margin-block-end: 30px;
   * HERO
   */
   .input-wrapper {
-    margin-left: 100px;
+    margin-left: 50px;
+  }
+
+  /**
+  * PROCESS
+  */
+
+  .grid-list {
+    margin-top: 20px;
   }
 
   /**OUR WORK
@@ -735,7 +743,7 @@ margin-block-end: 30px;
     align-items: center;
     text-align: center;
     list-style: none; /* Optional: Remove any default list styling */
-    margin-left: 50px;
+    margin-left: 45px;
     margin-top: 10px;
     width: 220px;
     height: 220px;
