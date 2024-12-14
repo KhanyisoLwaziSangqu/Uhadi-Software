@@ -840,6 +840,14 @@ margin-block-end: 30px;
     left: 80px;
   }
 
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+  }
+
   /**
   * FOOTER
   */
