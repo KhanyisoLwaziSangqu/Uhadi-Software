@@ -790,6 +790,25 @@ margin-block-end: 30px;
   .copyright {
     margin-left: 10px;
   }
+
+  .btn-footer-contact {
+    height: 62px;
+    padding-inline: 50px;
+    font-weight: var(--weight-semiBold);
+    border-radius: var(--radius-pill);
+    color: var(--text-black);
+    display: grid;
+    place-content: center;
+    max-width: max-content;
+    transition: var(--transition-1);
+    background-color: var(--bg-sunglow);
+  }
+  
+  .btn-footer-contact:is(:hover, :focus-visible) {
+    background-color: var(--bg-vivid-violet);
+    color: var(--text-white);
+  }
+  
 }
 /**
 * responsive for min-width: 481px and max-width: 768px screen 
