@@ -716,11 +716,78 @@ margin-block-end: 30px;
 \*-----------------------------------*/
 
 /**
+* responsive for max-width: 481px screen 
+*/
+@media (max-width: 480px) {
+/**
+  * HERO
+  */
+  .input-wrapper {
+    margin-left: 100px;
+  }
+
+  /**OUR WORK
+  **/
+  
+  .center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none; /* Optional: Remove any default list styling */
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 220px;
+    height: 220px;
+  }
+
+  /**
+  * FOOTER
+  */
+  .footer-list {
+    gap: 15px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-block-start: 20px;
+  }
+  
+  .footer-bottom-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-block-start: 20px;
+  }
+  
+  .logo-footer {
+    border-radius: 100%;
+    margin-top: -90px;
+  }
+  
+  .section.footer-top {
+    display: flex; /* Enable horizontal alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Top-align items */
+    gap: 1rem; /* Space between the footer-container and footer-list */
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  
+}
+/**
 * responsive for min-width: 481px and max-width: 768px screen 
 */
-@media (min-width: 370px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   
-
+/**
+* HEADER 
+*/
   .navbar {
     margin-right:170px;
   }
@@ -729,7 +796,6 @@ margin-block-end: 30px;
     background-color: #121426;  /* This is likely the green color you are seeing */
 }
 
-  
    /**
   * HERO
   */
