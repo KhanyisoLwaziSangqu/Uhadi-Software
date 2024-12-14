@@ -253,7 +253,7 @@ body {
   position: absolute;
   top: 100%;
   right: 16px;
-  background-color: var(--bg-vivid-violet);
+  background-color: #121426;
   color: var(--text-white);
   padding: 16px 30px;
   border-radius: var(--radius-24);
