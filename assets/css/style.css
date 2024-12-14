@@ -718,7 +718,7 @@ margin-block-end: 30px;
 /**
 * responsive for min-width: 481px and max-width: 768px screen 
 */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 370px) and (max-width: 768px) {
   
 
   .navbar {
