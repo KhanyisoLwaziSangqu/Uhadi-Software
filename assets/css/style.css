@@ -774,11 +774,14 @@ margin-block-end: 30px;
     flex-direction: column; /* Stack items vertically */
     justify-content: flex-start; /* Align items to the start */
     align-items: center; /* Top-align items */
-    gap: 1rem; /* Space between the footer-container and footer-list */
+    gap: 5rem; /* Space between the footer-container and footer-list */
     margin-top: 10px;
     margin-left: 0;
   }
-  
+
+  .copyright {
+    margin-left: 10px;
+  }
 }
 /**
 * responsive for min-width: 481px and max-width: 768px screen 
@@ -800,7 +803,7 @@ margin-block-end: 30px;
   * HERO
   */
   .input-wrapper {
-    margin-left: 130px;
+    margin-left: 80px;
   }
 
    /**
