@@ -264,7 +264,7 @@ body {
   color: var(--text-white);
   font-size: 3rem;
   background-color: #121426;
-  margin-left: 50px;
+  margin-left: auto;
 }
 
 .nav-open-btn:hover {
@@ -751,10 +751,10 @@ button {
 }
 
 .email-us-p {
-  display: inline;
-  text-align: center; /* Centering the content */
-  margin: 0 auto; /* Center the whole paragraph if it's within a block container */
-  margin-left: 100px;
+  display: block;
+  text-align: center;
+  margin: 20px auto 0 auto;
+  max-width: 100%;
 }
 
 .email-us-p a {
