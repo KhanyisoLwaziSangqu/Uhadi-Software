@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeShop - Live Shopping Reimagined</title>
+    <meta name="description" content="Join the future of social shopping. Watch live streams, shop in real-time, and connect with sellers on SeeShop.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/collection/components/icon/icon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><span style="color: #FF6B35;">See</span><span style="color: #F7931E;">Shop</span> 🛍️</h1>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#download" class="btn-primary">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">See What Friends Buy. Shop Live With Confidence.</h2>
+                <p class="hero-subtitle">South Africa's social shopping app. Watch live product demos, upload shopping videos, and discover what your community loves. Built for South African shoppers and sellers.</p>
+                <div class="hero-cta">
+                    <a href="#download" class="btn-large">Download SeeShop Now</a>
+                    <p class="hero-note">🍎 Available on iOS App Store • 🤖 Android Beta Testing • 100% Free</p>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <!-- Top Tabs -->
+                        <div class="mock-tabs">
+                            <div class="mock-tab active">Livestreams</div>
+                            <div class="mock-tab">Following</div>
+                        </div>
+
+                        <!-- Video Content Area -->
+                        <div class="mock-video">
+                            <div class="live-badge-top">🔴 LIVE • 1.5K viewers</div>
+                        </div>
+
+                        <!-- Right Action Buttons (Correct Order from HomeScreen) -->
+                        <div class="mock-actions">
+                            <!-- 1. Shop -->
+                            <div class="action-btn">
+                                <div class="action-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="white">
+                                        <path d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zm80 0v-32a96 96 0 0196-96h0a96 96 0 0196 96v32"/>
+                                    </svg>
+                                </div>
+                                <div class="action-label">Shop</div>
+                            </div>
+                            <!-- 2. Follow -->
+                            <div class="action-btn">
+                                <div class="action-icon follow-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="white">
+                                        <path d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm80 224h-64v64a16 16 0 01-32 0v-64h-64a16 16 0 010-32h64v-64a16 16 0 0132 0v64h64a16 16 0 010 32z"/>
+                                    </svg>
+                                </div>
+                                <div class="action-label">Follow</div>
+                            </div>
+                            <!-- 3. Like -->
+                            <div class="action-btn">
+                                <div class="action-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="white">
+                                        <path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"/>
+                                    </svg>
+                                </div>
+                                <div class="action-count">342</div>
+                            </div>
+                            <!-- 4. Chat -->
+                            <div class="action-btn">
+                                <div class="action-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="white">
+                                        <path d="M87.49 380c1.19-4.38-1.44-10.47-3.95-14.86a44.86 44.86 0 00-2.54-3.8 199.81 199.81 0 01-33-110C47.65 139.09 140.73 48 255.83 48 356.21 48 440 117.54 459.58 209.85a199 199 0 014.42 41.64c0 112.41-89.49 204.93-204.59 204.93-18.3 0-43-4.6-56.47-8.37s-26.92-8.77-30.39-10.11a31.09 31.09 0 00-11.12-2.07 30.71 30.71 0 00-12.09 2.43l-67.83 24.48a16 16 0 01-4.67 1.22 9.6 9.6 0 01-9.57-9.74 15.85 15.85 0 01.6-3.29z"/>
+                                    </svg>
+                                </div>
+                                <div class="action-label">Chat</div>
+                            </div>
+                            <!-- 5. Share -->
+                            <div class="action-btn">
+                                <div class="action-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="24" height="24" fill="white">
+                                        <path d="M336 192h40a40 40 0 0140 40v192a40 40 0 01-40 40H136a40 40 0 01-40-40V232a40 40 0 0140-40h40m160-64l-80-80-80 80m80 193V48"/>
+                                    </svg>
+                                </div>
+                                <div class="action-label">Share</div>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Info -->
+                        <div class="mock-info">
+                            <div class="creator-badge">
+                                <div class="creator-initial">T</div>
+                                <div class="creator-name">@themba_shop</div>
+                            </div>
+                            <div class="stream-title">Premium Jewelry Collection 💎</div>
+                            <div class="stream-desc">Handcrafted pieces, limited edition!</div>
+                        </div>
+
+                        <!-- Bottom Tab Navigator -->
+                        <div class="mock-tab-bar">
+                            <div class="tab-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor">
+                                    <path d="M261.56 101.28a8 8 0 00-11.06 0L66.4 277.15a8 8 0 00-2.47 5.79L63.9 448a32 32 0 0032 32H192a16 16 0 0016-16V328a8 8 0 018-8h80a8 8 0 018 8v136a16 16 0 0016 16h96.06a32 32 0 0032-32V282.94a8 8 0 00-2.47-5.79z"/>
+                                </svg>
+                                <span>Videos</span>
+                            </div>
+                            <div class="tab-item active">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor">
+                                    <path d="M374.79 308.78L457.5 367a16 16 0 0022.5-14.62V159.62A16 16 0 00457.5 145l-82.71 58.22A16 16 0 00368 216.3v79.4a16 16 0 006.79 13.08zM268 384H84a52.15 52.15 0 01-52-52V180a52.15 52.15 0 0152-52h184.48A51.68 51.68 0 01320 179.52V332a52.15 52.15 0 01-52 52z"/>
+                                </svg>
+                                <span>Livestreams</span>
+                            </div>
+                            <div class="tab-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="21" height="21" fill="currentColor">
+                                    <path d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm80 224h-64v64a16 16 0 01-32 0v-64h-64a16 16 0 010-32h64v-64a16 16 0 0132 0v64h64a16 16 0 010 32z"/>
+                                </svg>
+                                <span>Upload</span>
+                            </div>
+                            <div class="tab-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor">
+                                    <path d="M402 168c-2.93 40.67-33.1 72-66 72s-63.12-31.32-66-72c-3-42.31 26.37-72 66-72s69 30.46 66 72z"/>
+                                    <path d="M336 304c-65.17 0-127.84 32.37-143.54 95.41-2.08 8.34 3.15 16.59 11.72 16.59h263.65c8.57 0 13.77-8.25 11.72-16.59C463.85 335.36 401.18 304 336 304z"/>
+                                    <path d="M200 185.94c-2.34 32.48-26.72 58.06-53 58.06s-50.7-25.57-53-58.06C91.61 152.15 115.34 128 147 128s55.39 24.77 53 57.94z"/>
+                                    <path d="M206 306c-18.05-8.27-37.93-11.45-59-11.45-52 0-102.1 25.85-114.65 76.2-1.65 6.66 2.53 13.25 9.37 13.25H154"/>
+                                </svg>
+                                <span>Social</span>
+                            </div>
+                            <div class="tab-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="18" height="18" fill="currentColor">
+                                    <path d="M258.9 48C141.92 46.42 46.42 141.92 48 258.9c1.56 112.19 92.91 203.54 205.1 205.1 117 1.6 212.48-93.9 210.88-210.88C462.44 140.91 371.09 49.56 258.9 48zM385.32 375.25a4 4 0 01-6.14-.32 124.27 124.27 0 00-32.35-29.59C321.37 329 289.11 320 256 320s-65.37 9-90.83 25.34a124.24 124.24 0 00-32.35 29.58 4 4 0 01-6.14.32A175.32 175.32 0 0180 259c-1.63-97.31 78.22-178.76 175.57-179S432 158.81 432 256a175.32 175.32 0 01-46.68 119.25z"/>
+                                    <path d="M256 144c-19.72 0-37.55 7.39-50.22 20.82s-19 32-17.57 51.93C191.11 256 221.52 288 256 288s64.83-32 67.79-71.24c1.48-19.74-4.8-38.14-17.68-51.82C293.39 151.44 275.59 144 256 144z"/>
+                                </svg>
+                                <span>Profile</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Alert -->
+    <section class="beta-alert">
+        <div class="container">
+            <div class="alert-box">
+                <h3>🎉 SeeShop is Now Live! 🎉</h3>
+                <p><strong>iPhone Users:</strong> Download SeeShop directly from the App Store! <br>
+                <strong>Android Users:</strong> Join our Closed Beta Testing on Google Play Store.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why SeeShop?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>See What Friends Buy</h3>
+                    <p>Discover products your network loves. Follow friends, see their purchases and likes, and shop with the confidence of community recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📹</div>
+                    <h3>Live Shopping Streams</h3>
+                    <p>Watch sellers broadcast real-time product demonstrations. Ask questions, interact with the community, and see products before you buy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3>Video Uploads & Replays</h3>
+                    <p>Upload shopping videos or watch past streams anytime. Shop 24/7 with our searchable video catalog - never miss a great product.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>Sell Beyond Your Network</h3>
+                    <p>Small business owners: reach customers across South Africa. Go live or upload videos to showcase your products and build a loyal community.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>TikTok-Style Discovery</h3>
+                    <p>Personalized feed mixing live streams and videos. Like, comment, share with friends, and discover trending products in your community.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy & Trust</h3>
+                    <p>Control who sees your activity. Verified seller badges, secure payments, and Google Play protection ensure safe shopping.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">For Shoppers</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Follow Your Network</h3>
+                    <p>Connect with friends and see what products they're loving, buying, and recommending.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Watch Live or Videos</h3>
+                    <p>Browse livestreams, uploaded videos, or replay past content. Shop anytime, anywhere.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Shop with Trust</h3>
+                    <p>See products live, ask questions in real-time, and buy with community confidence.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Share & Discover</h3>
+                    <p>Like, comment, and share finds with your network. Help friends discover great products.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 4rem;">For Sellers</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create Your Profile</h3>
+                    <p>Sign up as a seller and showcase your products. Get verified for enhanced credibility.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Go Live or Upload</h3>
+                    <p>Broadcast live product demos or upload pre-recorded shopping videos to reach customers 24/7.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Build Your Community</h3>
+                    <p>Engage with customers in real-time, answer questions, and create loyal followers across South Africa.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Grow Your Business</h3>
+                    <p>Reach beyond your local network. Track analytics, manage orders, and scale your sales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="join-beta">
+        <div class="container">
+            <h2 class="section-title">Download SeeShop</h2>
+            <p class="section-subtitle">Get started with South Africa's live shopping platform today!</p>
+
+            <!-- Download Buttons (Side by Side) -->
+            <div class="download-buttons-container">
+                <a href="https://apps.apple.com/za/app/seeshop/id6757807742" target="_blank" class="btn-download-app">
+                    <svg class="download-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
+                    </svg>
+                    <div>
+                        <span class="download-label">DOWNLOAD ON</span>
+                        <span class="download-platform">App Store</span>
+                    </div>
+                </a>
+                <a href="#android-beta" class="btn-download-app btn-beta">
+                    <svg class="download-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                    </svg>
+                    <div>
+                        <span class="download-label">JOIN BETA ON</span>
+                        <span class="download-platform">Google Play</span>
+                    </div>
+                </a>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 4rem;">Android Beta Testing</h2>
+            <p class="section-subtitle">Help shape the future of live shopping! We're looking for Android users to test SeeShop.</p>
+
+            <!-- Android Beta Instructions with Visual Cards -->
+            <div id="android-beta" class="beta-instructions-seeshop">
+                <p class="beta-intro">SeeShop for Android is currently in closed beta testing on Google Play Store. Follow these steps to get access:</p>
+
+                <div class="beta-steps-container-seeshop">
+                    <div class="beta-step-seeshop">
+                        <div class="beta-step-number-seeshop">1</div>
+                        <div class="beta-step-content-seeshop">
+                            <h4>Send Your Gmail Address</h4>
+                            <p>Email your Gmail address to <strong>uhadi@uhadi.co.za</strong> or use the form below to be added to the beta testers list</p>
+                        </div>
+                    </div>
+
+                    <div class="beta-step-seeshop">
+                        <div class="beta-step-number-seeshop">2</div>
+                        <div class="beta-step-content-seeshop">
+                            <h4>Get Added to Beta List</h4>
+                            <p>We'll add you to our testers list within 24 hours and send you a confirmation email</p>
+                        </div>
+                    </div>
+
+                    <div class="beta-step-seeshop">
+                        <div class="beta-step-number-seeshop">3</div>
+                        <div class="beta-step-content-seeshop">
+                            <h4>Download from Google Play</h4>
+                            <p>Once approved, visit the <a href="https://play.google.com/store/apps/details?id=com.seeshop.app" target="_blank">Google Play Store link</a> to download SeeShop</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="beta-note-seeshop">
+                    <p>⚠️ <strong>Important:</strong> You must use the same Gmail account that you sent to us to access the beta version on Google Play Store.</p>
+                </div>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="signup-form">
+                <h3>🎉 Get Beta Access Now!</h3>
+                <form id="betaForm" action="https://formspree.io/f/mqayrndg" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Gmail Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="phone" placeholder="Phone Number (Optional)">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="What excites you about live shopping? (Optional)" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Me Beta Access!</button>
+                    <p class="form-note">Or email your Gmail to: <strong>uhadi@uhadi.co.za</strong></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Placeholder -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Early Testers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"This is the future of online shopping! Being able to see products live before buying makes such a difference."</p>
+                    <p class="testimonial-author">- Beta Tester, Johannesburg</p>
+                </div>
+                <div class="testimonial">
+                    <p>"As a seller, SeeShop helps me connect with customers in a way that photos never could. Game changer!"</p>
+                    <p class="testimonial-author">- Verified Seller, Cape Town</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Love the real-time interaction. It's like having a personal shopping assistant for every purchase."</p>
+                    <p class="testimonial-author">- Beta Tester, Durban</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Is SeeShop available on iPhone?</h3>
+                    <p>Yes! SeeShop is now live on the iOS App Store. Download it today and start shopping!</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is my data safe?</h3>
+                    <p>Absolutely. SeeShop has passed all Google Play Store security checks and uses industry-standard encryption for all transactions and data.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Will the app always be free?</h3>
+                    <p>Yes for shoppers! Sellers may have premium features in the future, but browsing and shopping will always be free.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I find a bug?</h3>
+                    <p>Please report it! Use the in-app feedback button or email us at uhadi@uhadi.co.za. Your feedback helps us improve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🛍️ SeeShop</h3>
+                    <p>South Africa's social shopping platform. See what friends buy, shop live with confidence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://uhadi.co.za" target="_blank">Uhadi Technology</a></li>
+                        <li><a href="https://uhadi.co.za/privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                        <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="mailto:uhadi@uhadi.co.za">uhadi@uhadi.co.za</a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/uhadi-software/" aria-label="LinkedIn" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="#" aria-label="Twitter" target="_blank">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#" aria-label="Instagram" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SeeShop. All rights reserved. Built with ❤️ for live shopping enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

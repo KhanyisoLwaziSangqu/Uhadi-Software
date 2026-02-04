@@ -1,0 +1,8 @@
+#### Command to open website
+
+# Using Node.js (you already have it):
+cd "c:\Users\Khanyiso Sangqu\Uhadi\Uhadi-Software"
+npx http-server -p 8000 -o
+
+### Refresh
+Windows Chrome/Edge: Press Ctrl + Shift + R or Ctrl + F5

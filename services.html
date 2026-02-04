@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uhadi Software - About Us</title>
-    <meta name="title" content="Uhadi Software">
-    <meta name="description" content="Learn more about Uhadi Software, a software development agency specializing in clean, interactive web applications.">
+    <title>Uhadi Technology - Services</title>
+    <meta name="title" content="Uhadi Technology">
+    <meta name="description" content="Custom software development services from Uhadi Technology - building web, AI, and mobile applications.">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/images/Uhadi Logo.png" type="image/svg+xml">
@@ -14,7 +14,7 @@
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=League+Spartan:wght@700;800&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -25,7 +25,7 @@
     <header class="header">
         <div class="container">
             <a href="./index.html" class="logo">
-                <img src="./assets/images/Uhadi Logo.png" alt="Uhadi Software home">
+                <span class="logo-text">Uhadi</span>
             </a>
 
             <nav class="navbar" data-navbar>
@@ -33,14 +33,19 @@
                     <li>
                         <a href="./about-us.html" class="navbar-link">About Us</a>
                     </li>
-    
+
+                    <li>
+                        <a href="./docs/index.html" target="_blank" class="navbar-link">SeeShop</a>
+                    </li>
+
+                    <li>
+                        <a href="./landing-page/index.html" target="_blank" class="navbar-link">CoworkAI</a>
+                    </li>
+
                     <li>
                         <a href="./services.html" class="navbar-link">Services</a>
                     </li>
-    
-                    <li>
-                        <a href="./our-work.html" class="navbar-link">Our Work</a>
-                    </li>
+                </ul>
             </nav>
 
             <a href="./contact-us-page.html" class="btn btn-secondary">Contact Us</a>
@@ -59,9 +64,9 @@
             <!-- OUR SERVICES SECTION -->
             <section class="section services text-center" aria-labelledby="services-label">
                 <div class="container">
-                    <h2 class="h2 title section-title" id="services-label">Our Services</h2>
+                    <h2 class="h2 title section-title" id="services-label">Custom Development Services</h2>
                     <p class="section-text">
-                        At Uhadi Software, we specialize in developing cutting-edge web applications tailored to your business needs. Our team leverages modern web technologies to create dynamic, interactive, and scalable applications that help your business stay ahead of the competition.
+                        While our primary focus is on our product suite (SeeShop and CoworkAI), Uhadi Technology also offers custom software development services. We specialize in developing cutting-edge web applications tailored to your business needs, leveraging modern web technologies to create dynamic, interactive, and scalable applications.
                     </p>
                     
                     <div class="services-list">
@@ -92,104 +97,106 @@
                     </p>
                 </div>
             </section>
+
+            <section class="contact">
+                <h2>Get in Touch</h2>
+                <form id="contact-form" action="https://formspree.io/f/xnndzdzk" method="POST">
+                    <div class="form-group">
+                      <label for="name">Your Name:</label>
+                      <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">Your Email:</label>
+                      <input type="email" id="email" name="_replyto" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="message">Your Message:</label>
+                      <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-button">Send Message</button>
+
+                    <p class="email-us-p"> Alternatively email us at: <a href="mailto:uhadi@uhadi.co.za">uhadi@uhadi.co.za</a></p>
+                  </form>
+            </section>
         </article>
-        
+
+        <!--JS Script-->
+        <script>
+            const form = document.getElementById('contact-form');
+            const button = document.getElementById('submit-button');
+
+            form.addEventListener('submit', async function (e) {
+              e.preventDefault();
+
+              const formData = new FormData(form);
+
+              try {
+                const response = await fetch(form.action, {
+                  method: form.method,
+                  body: formData,
+                  headers: {
+                    Accept: "application/json"
+                  }
+                });
+
+                if (response.ok) {
+                  button.textContent = "Message Sent!";
+                  button.disabled = true;
+                  form.reset();
+                } else {
+                  button.textContent = "Try Again";
+                }
+              } catch (error) {
+                console.error("Submission failed:", error);
+                button.textContent = "Error!";
+              }
+            });
+          </script>
+
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-
-        <div class="section footer-top">
-
-            <div class="footer-container">
-            <a href="./index.html" class="logo">
-                <img src="./assets/images/Uhadi Logo.png" class="logo-footer" width="205" height="40" loading="lazy" alt="Uhadi Software">
-            </a>
-
-            <address class="footer-text">
-                Johannesburg, Gauteng, South Africa
-            </address>
-
-            <ul class="social-list">
-
-                <li>
-                    <a href="https://www.linkedin.com/company/uhadi-software/" class="social-link">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                </li>
-
-            </ul>
-
-            <a href="./contact-us-page.html" class="btn btn-primary">Contact Us</a>
-            </div>
-
-            <ul class="footer-list">
-                
-                <li>
-                    <a href="./about-us.html" class="footer-link"> About Us</a>
-                </li>
-
-                <li>
-                    <a href="./services.html" class="footer-link">Services</a>
-                </li>
-
-                <li>
-                    <a href="./our-work.html" class="footer-link">Our Work</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Web Development</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">AI App Development</a>
-                </li>
-
-                <li>
-                    <a href="#" class="footer-link">Mobile App Development</a>
-                </li>
-
-                
-
-            </ul>
-
-        </div>
-
-        
-
-        </div>
-
-        <div>
-            <div class="footer-bottom text-center">
-                <div class="container">
-                    <p class="copyright">                    
-                        Copyright: Uhadi Software (Pty) LTD
-                    </p>
-                
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="./index.html" class="footer-logo"><span class="logo-text">Uhadi</span></a>
+                    <p>Building innovative software products that transform how people work and shop across Africa.</p>
                 </div>
-    
-                <ul class="footer-bottom-list">
-    
-                    <li>
-                        <a href="#" class="footer-link">Terms of use</a>
-                    </li>
-    
-                    <li>
-                        <a href="./privacy-policy.html" class="footer-link">Privacy Policy</a>
-                    </li>
-                </ul>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <a href="./docs/index.html" target="_blank">SeeShop</a>
+                    <a href="./landing-page/index.html" target="_blank">CoworkAI</a>
+                    <a href="./services.html">Custom Development</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="./about-us.html">About Us</a>
+                    <a href="./privacy-policy.html">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="mailto:uhadi@uhadi.co.za">uhadi@uhadi.co.za</a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/uhadi-software/" aria-label="LinkedIn" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="#" aria-label="Twitter" target="_blank">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#" aria-label="Instagram" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Uhadi Technology. All rights reserved.</p>
+            </div>
         </div>
     </footer>
   <!--
@@ -206,3 +213,7 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
+
+
+

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeShop - Uhadi Technology</title>
+    <meta name="title" content="SeeShop - Live Shopping Reimagined">
+    <meta name="description" content="Africa's first social shopping app. Watch live product demos, upload shopping videos, and discover what your community loves.">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/Uhadi Logo.png" type="image/svg+xml">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=League+Spartan:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        .seeshop-hero {
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .seeshop-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .seeshop-hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .app-store-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: white;
+            color: black;
+            padding: 1.25rem 2.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.125rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-store-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .beta-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+
+        .seeshop-content {
+            padding: 4rem 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #212529;
+        }
+
+        .feature-box p {
+            color: #6C757D;
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 3rem auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .full-page-link {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .full-page-link a {
+            color: #FF6B35;
+            font-weight: 600;
+            font-size: 1.125rem;
+            text-decoration: none;
+            border-bottom: 2px solid #FF6B35;
+            transition: opacity 0.3s;
+        }
+
+        .full-page-link a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .seeshop-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .seeshop-hero p {
+                font-size: 1.125rem;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <span class="logo-text">Uhadi</span>
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="./about-us.html" class="navbar-link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="./seeshop.html" class="navbar-link">SeeShop</a>
+                    </li>
+
+                    <li>
+                        <a href="./landing-page/index.html" target="_blank" class="navbar-link">CoworkAI</a>
+                    </li>
+
+                    <li>
+                        <a href="./services.html" class="navbar-link">Services</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="./contact-us-page.html" class="btn btn-secondary">Contact Us</a>
+
+            <button class="nav-open-btn" aria-label="toggle menu" data-nav-toggle-btn>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+            </button>
+
+            <div class="overlay" data-overlay></div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <!-- Hero Section -->
+            <section class="seeshop-hero">
+                <div class="container">
+                    <h1><span style="color: #FFD23F;">See</span>Shop 🛍️</h1>
+                    <p>South Africa's Social Shopping App</p>
+                    <p style="font-size: 1.25rem;">Watch live product demos, upload shopping videos, and discover what your community loves.</p>
+
+                    <div class="download-buttons">
+                        <a href="https://apps.apple.com/za/app/seeshop/id6757807742" target="_blank" class="app-store-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5M13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                            </svg>
+                            Download on App Store
+                        </a>
+
+                        <a href="https://play.google.com/store/apps/details?id=com.seeshop.app" target="_blank" class="app-store-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                            </svg>
+                            Join Android Beta
+                            <span class="beta-badge">BETA</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="seeshop-content">
+                <div class="container">
+                    <h2 class="h2 title section-title text-center">Why SeeShop?</h2>
+
+                    <div class="feature-grid">
+                        <div class="feature-box">
+                            <div class="feature-icon">👥</div>
+                            <h3>See What Friends Buy</h3>
+                            <p>Discover products your network loves. Follow friends, see their purchases and likes, and shop with community confidence.</p>
+                        </div>
+
+                        <div class="feature-box">
+                            <div class="feature-icon">📹</div>
+                            <h3>Live Shopping Streams</h3>
+                            <p>Watch sellers broadcast real-time product demonstrations. Ask questions, interact, and see products before you buy.</p>
+                        </div>
+
+                        <div class="feature-box">
+                            <div class="feature-icon">🎬</div>
+                            <h3>Video Uploads & Replays</h3>
+                            <p>Upload shopping videos or watch past streams anytime. Shop 24/7 with our searchable video catalog.</p>
+                        </div>
+
+                        <div class="feature-box">
+                            <div class="feature-icon">💼</div>
+                            <h3>Sell Beyond Your Network</h3>
+                            <p>Small business owners: reach customers across South Africa. Go live or upload videos to showcase products.</p>
+                        </div>
+
+                        <div class="feature-box">
+                            <div class="feature-icon">✨</div>
+                            <h3>TikTok-Style Discovery</h3>
+                            <p>Personalized feed mixing live streams and videos. Like, comment, share, and discover trending products.</p>
+                        </div>
+
+                        <div class="feature-box">
+                            <div class="feature-icon">🔒</div>
+                            <h3>Privacy & Trust</h3>
+                            <p>Control your activity visibility. Verified sellers, secure payments, and app store protection.</p>
+                        </div>
+                    </div>
+
+                    <div class="full-page-link">
+                        <a href="./docs/index.html" target="_blank">View Full SeeShop Landing Page →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <div class="container">
+                    <h2>Ready to Transform Your Shopping Experience?</h2>
+                    <p>Join shoppers and sellers across South Africa on our live shopping platform.</p>
+
+                    <div class="download-buttons">
+                        <a href="https://apps.apple.com/za/app/seeshop/id6757807742" target="_blank" class="app-store-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5M13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                            </svg>
+                            Download on App Store
+                        </a>
+
+                        <a href="./contact-us-page.html" class="app-store-btn">
+                            Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="./index.html" class="footer-logo"><span class="logo-text">Uhadi</span></a>
+                    <p>Building innovative software products that transform how people work and shop across Africa.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <a href="./seeshop.html">SeeShop</a>
+                    <a href="./landing-page/index.html" target="_blank">CoworkAI</a>
+                    <a href="./services.html">Custom Development</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="./about-us.html">About Us</a>
+                    <a href="./privacy-policy.html">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="mailto:uhadi@uhadi.co.za">uhadi@uhadi.co.za</a>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/uhadi-software/" aria-label="LinkedIn" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="#" aria-label="Twitter" target="_blank">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#" aria-label="Instagram" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Uhadi Technology. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+  <!--
+   - custom js link
+  -->
+
+  <script src="./assets/js/script.js"></script>
+
+<!--
+  - Ionicon
+-->
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
