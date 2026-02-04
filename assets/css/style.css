@@ -243,6 +243,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header .logo {
@@ -267,10 +268,6 @@ body {
   border: none;
   padding: 0;
   cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .nav-open-btn:hover {
